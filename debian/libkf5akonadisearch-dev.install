@@ -1,0 +1,7 @@
+usr/include/KF5/AkonadiSearch/
+usr/include/KF5/akonadi_search_version.h
+usr/lib/*/cmake/KF5AkonadiSearch/
+usr/lib/*/libKF5AkonadiSearchCore.so
+usr/lib/*/libKF5AkonadiSearchDebug.so
+usr/lib/*/libKF5AkonadiSearchPIM.so
+usr/lib/*/libKF5AkonadiSearchXapian.so

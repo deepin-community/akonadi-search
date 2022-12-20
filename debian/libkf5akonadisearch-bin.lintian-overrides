@@ -1,0 +1,2 @@
+# akonadi agent, not something to be run manually by the user
+libkf5akonadisearch-bin: no-manual-page usr/bin/akonadi_*_agent

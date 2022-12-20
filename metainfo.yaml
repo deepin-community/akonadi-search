@@ -1,0 +1,24 @@
+name: akonadi-search
+fancyname: Akonadi Search
+maintainer: dvratil
+description: Akonadi indexing and searching library
+tier: 3
+type: solution
+platforms:
+    - name: All
+portingAid: false
+deprecated: false
+release: false
+libraries:
+  - cmake: "KF5::AkonadiSearchXapian"
+  - cmake: "KF5::AkonadiSearchCore"
+cmakename: KF5AkonadiSearch
+
+public_lib: true
+group: kdepim
+
+public_source_dirs:
+ - core
+ - lib
+ - xapian
+ - debug

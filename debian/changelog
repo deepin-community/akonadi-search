@@ -1,0 +1,434 @@
+akonadi-search (4:21.08.1-1-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Thu, 24 Nov 2022 07:19:27 +0800
+
+akonadi-search (4:21.08.1-1) unstable; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.08.1).
+  * Bump Standards-Version to 4.6.0, no change required.
+
+ -- Norbert Preining <norbert@preining.info>  Sat, 11 Sep 2021 07:19:25 +0900
+
+akonadi-search (4:21.08.0-1) unstable; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.08.0).
+
+ -- Norbert Preining <norbert@preining.info>  Mon, 16 Aug 2021 15:41:45 +0900
+
+akonadi-search (4:21.04.3-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.04.3).
+
+ -- Norbert Preining <norbert@preining.info>  Fri, 09 Jul 2021 10:32:33 +0900
+
+akonadi-search (4:21.04.1-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.04.1).
+
+ -- Norbert Preining <norbert@preining.info>  Fri, 14 May 2021 06:08:35 +0900
+
+akonadi-search (4:21.04.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.04.0).
+  * Borrow minimal upstream signing key from k3b.
+  * Drop Kubuntu from maintainer name.
+  * Removed Maximiliano Curia from the uploaders, thanks for your work
+    on the package!
+  * Added myself to the uploaders.
+
+ -- Norbert Preining <norbert@preining.info>  Thu, 13 May 2021 09:45:59 +0900
+
+akonadi-search (4:20.08.3-1) unstable; urgency=medium
+
+  [ Sandro Knauß ]
+  * Bump Standards-Version to 4.5.1 (No changes needed).
+  * New upstream release (20.08.3).
+  * Update build-deps and deps with the info from cmake.
+  * Minimize the upstream GPG signing key.
+
+ -- Sandro Knauß <hefee@debian.org>  Wed, 16 Dec 2020 01:48:42 +0100
+
+akonadi-search (4:20.08.2-2) unstable; urgency=medium
+
+  * Team upload to unstable.
+
+ -- Sandro Knauß <hefee@debian.org>  Tue, 20 Oct 2020 00:08:21 +0200
+
+akonadi-search (4:20.08.2-1) experimental; urgency=medium
+
+  [ Sandro Knauß ]
+  * New upstream release (20.08.2).
+  * Update build-deps and deps with the info from cmake.
+  * Update Homepage link to point to new invent.kde.org
+  * Update field Source in debian/copyright to invent.kde.org move.
+  * Update repository related entries to metadata file.
+  * Add Bug-* entries to metadata file.
+  * Move krunner_pimcontacts.so ->
+    kf5/krunner/krunner_pimcontacts.so.
+  * Delete not generated plasma-krunner-pimcontacts.desktop.
+
+ -- Sandro Knauß <hefee@debian.org>  Fri, 16 Oct 2020 00:52:39 +0200
+
+akonadi-search (4:20.04.1-2) unstable; urgency=medium
+
+  * Team upload.
+  * Explicitly add the gettext build dependency.
+  * Switch from dhmk to the dh sequencer:
+    - invoke the dh sequencer using the kf5 addon
+    - call the right debhelper command instead of $(overridden_command)
+  * Unregister the old /etc/xdg/akonadi-search.categories, and
+    /etc/xdg/akonadi-search.renamecategories conffiles.
+  * Change an internal hostname of an old Ubuntu changelog entry to
+    ubuntu@ubuntu.com to avoid lintian issues.
+  * Tighten the inter-library dependencies.
+  * Simplify the dependencies of libkf5akonadisearch-dev: use the sodeps addon
+    instead of manually listing all the libraries.
+  * Remove the unused ${shlibs:Depends} substvar in libkf5akonadisearch-data.
+  * Update lintian overrides.
+
+ -- Pino Toscano <pino@debian.org>  Fri, 28 Aug 2020 08:02:41 +0200
+
+akonadi-search (4:20.04.1-1) unstable; urgency=medium
+
+  [ Sandro Knauß ]
+  * New upstream release (20.04.1).
+  * Update build-deps and deps with the info from cmake.
+
+ -- Sandro Knauß <hefee@debian.org>  Wed, 27 May 2020 00:00:06 +0200
+
+akonadi-search (4:20.04.0-1) experimental; urgency=medium
+
+  [ Sandro Knauß ]
+  * Update watch file to the new release-service location.
+  * Bump compat level to 13.
+  * Bump Standards-Version to 4.5.0 (No changes needed).
+  * Get rid of debug-symbol-migration package.
+  * Add Rules-Requires-Root field to control.
+  * New upstream release (19.12.3).
+  * Update build-deps and deps with the info from cmake.
+  * New upstream release (20.04.0).
+  * Enable hardening all.
+  * Wrap long lines in changelog entries: 4:17.08.0-1, 16.04.1-1.
+  * Set field Upstream-Contact in debian/copyright.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+
+ -- Sandro Knauß <hefee@debian.org>  Wed, 13 May 2020 12:22:37 +0200
+
+akonadi-search (4:19.08.3-1) unstable; urgency=medium
+
+  [ Sandro Knauß ]
+  * New upstream release (19.08.3).
+  * Update build-deps and deps with the info from cmake.
+
+ -- Sandro Knauß <hefee@debian.org>  Sat, 30 Nov 2019 22:54:58 +0100
+
+akonadi-search (4:19.08.2-1) experimental; urgency=medium
+
+  [ Sandro Knauß ]
+  * New upstream release (19.08.2).
+  * Update build-deps and deps with the info from cmake.
+  * Remove breaks against kde-l10n packages.
+  * Update install files for new upstream release.
+  * Remove disable_failing_tests patch.
+
+ -- Sandro Knauß <hefee@debian.org>  Fri, 08 Nov 2019 10:39:36 +0100
+
+akonadi-search (4:18.08.3-3) unstable; urgency=medium
+
+  * Release to unstable.
+
+ -- Sandro Knauß <hefee@debian.org>  Thu, 14 Nov 2019 23:50:01 +0100
+
+akonadi-search (4:18.08.3-2) experimental; urgency=medium
+
+  [ Sandro Knauß ]
+  * Bump Standards-Version to 4.4.1 (No changes needed).
+  * Bump compat level to 12.
+  * Delete not needed Breaks/Confilcts.
+  * Use virtual packages to bundle KDEPIM.
+  * Enforce depdendencies between KDEPIM packages to enable bundling.
+
+ -- Sandro Knauß <hefee@debian.org>  Sat, 05 Oct 2019 00:56:47 +0200
+
+akonadi-search (4:18.08.3-1) unstable; urgency=medium
+
+  [ Sandro Knauß ]
+  * New upstream release (18.08.3).
+  * Update build-deps and deps with the info from cmake.
+  * Bump Standards-Version to 4.3.0 (No changes needed).
+  * Removed acc autopkgtest.
+  * Removed testsuite autopkgtest.
+
+ -- Sandro Knauß <hefee@debian.org>  Mon, 04 Feb 2019 15:59:48 +0100
+
+akonadi-search (4:18.08.1-1) unstable; urgency=medium
+
+  [ Sandro Knauß ]
+  * Bump Standards-Version to 4.2.1 (No changes needed).
+  * Follow stable releases in KDE again.
+  * New upstream release (18.08.1).
+  * Update build-deps and deps with the info from cmake.
+
+ -- Sandro Knauß <hefee@debian.org>  Tue, 02 Oct 2018 23:18:45 +0200
+
+akonadi-search (4:18.07.90-1) experimental; urgency=medium
+
+  [ Sandro Knauß ]
+  * Update watch file to match unstable releases, too.
+  * New upstream release (18.07.90).
+  * Bump Standards-Version to 4.2.0 (No changes needed).
+  * Update build-deps and deps with the info from cmake.
+  * Update symbols from build for 18.07.90.
+  * Update copyright file for new upstream.
+
+ -- Sandro Knauß <hefee@debian.org>  Sat, 18 Aug 2018 11:18:51 +0200
+
+akonadi-search (4:17.12.3-1) unstable; urgency=medium
+
+  * New upstream release (17.12.3).
+  * Update symbols from buildds for 4:17.12.2
+  * bump epoch in symbolsfiles to match version of the package.
+  * Update build-deps and deps with the info from cmake.
+  * use secure copyright format uri.
+  * Use secure uri in d/watch.
+  * Update package descriptions.
+
+ -- Sandro Knauß <hefee@debian.org>  Sat, 31 Mar 2018 18:22:35 +0200
+
+akonadi-search (4:17.12.2-1) experimental; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * New upstream release (17.12.2).
+  * Update Vcs links to salsa.
+  * Update build-deps and deps with the info from cmake
+  * Remove not needed Build-Deps.
+  * Update copyright file.
+  * Bump Standards-Version to 4.1.3 (No changes needed).
+  * Enable build tests (make them non-failing).
+  * Add libkf5akonadisearchxapian5 as dependency for libkf5akonadisearch-
+    dev
+  * Bump debhelper build-dep and compat to 11.
+  * Mark libkf5akonadisearch-dev as Multi-Arch: same.
+
+ -- Sandro Knauß <hefee@debian.org>  Fri, 09 Mar 2018 15:13:20 +0100
+
+akonadi-search (4:17.08.3-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * New upstream release (17.08.3).
+  * Bump Standards-Version to 4.1.2 (No changes needed).
+  * Remove not needed Build-Deps. (Closes: #884291)
+  * Bump debhelper build-dep and compat to 10.
+  * Update symbols from buildds for 4:17.08.0
+  * Set l10npkgs_firstversion_ok to 4:16.04.3-9~
+
+ -- Sandro Knauß <hefee@debian.org>  Thu, 21 Dec 2017 17:49:41 +0100
+
+akonadi-search (4:17.08.0-1) experimental; urgency=medium
+
+  * New upstream release (17.08.0)
+  * Add recommends for the akonadi indexer in the library that kdepim links
+    against
+  * Bump Standards-Version to 4.0.1.
+  * Update upstream metadata
+  * Update build-deps and deps with the info from cmake
+  * Update symbols files.
+  * Bump group breaks (17.08)
+  * Release to experimental
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 01 Sep 2017 22:11:47 +0200
+
+akonadi-search (4:17.08.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 17 Aug 2017 09:29:43 +0000
+
+akonadi-search (4:17.04.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 12 Jul 2017 10:17:09 +0000
+
+akonadi-search (4:17.04.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 07 Jun 2017 12:19:26 +0000
+
+akonadi-search (4:17.04.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 11 May 2017 18:08:45 +0000
+
+akonadi-search (4:17.04.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 19 Apr 2017 13:01:58 +0000
+
+akonadi-search (4:16.12.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 08 Mar 2017 13:45:39 +0000
+
+akonadi-search (4:16.12.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 08 Feb 2017 16:54:42 +0000
+
+akonadi-search (4:16.12.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 11 Jan 2017 13:12:25 +0000
+
+akonadi-search (4:16.12.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 14 Dec 2016 16:21:51 +0000
+
+akonadi-search (4:16.08.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Mon, 21 Nov 2016 13:51:44 +0000
+
+akonadi-search (4:16.08.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Fri, 14 Oct 2016 13:38:13 +0000
+
+akonadi-search (4:16.08.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Fri, 16 Sep 2016 13:04:51 +0000
+
+akonadi-search (4:16.08.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 17 Aug 2016 11:47:03 +0000
+
+akonadi-search (4:16.04.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 03 Aug 2016 12:50:49 +0000
+
+akonadi-search (4:16.04.2-2) unstable; urgency=medium
+
+  * Release to unstable.
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 05 Jul 2016 13:51:17 +0200
+
+akonadi-search (16.04.3-1) unstable; urgency=medium
+
+  [ Automatic packaging ]
+  * Update symbols files from buildds logs (16.04.2-2).
+  * Update build-deps and deps with the info from cmake
+
+  [ Sandro Knauß ]
+  * Added fix for Xapian 1.4 (Closes: #839990)
+    fix_for_xapian_1.4.patch
+    (got from upstream)
+  * Add myself to Uploades.
+
+ -- Sandro Knauß <hefee@debian.org>  Mon, 10 Oct 2016 19:38:04 +0200
+
+akonadi-search (16.04.2-1) experimental; urgency=medium
+
+  [ Automatic packaging ]
+  * Update symbols files with the buildds results
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 28 Jun 2016 08:29:58 +0200
+
+akonadi-search (16.04.1-1) experimental; urgency=medium
+
+  [ Automatic packaging ]
+  * Bump Standards-Version to 3.9.8
+  * Refresh patches
+  * Add a .gitattributes file to use dpkg-mergechangelogs
+  * Update build-deps and deps with the info from cmake
+  * Update symbols files.
+
+  [ Maximiliano Curia ]
+  * New upstream release (15.12.2).
+  * Replace the "Historical name" ddeb-migration by its "Modern, clearer"
+    replacement dbgsym-migration.
+  * Add upstream metadata (DEP-12)
+  * debian/control: Update Vcs-Browser and Vcs-Git fields
+  * Add missing build dependency
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 31 May 2016 17:32:24 +0200
+
+akonadi-search (15.12.1-1) experimental; urgency=medium
+
+  * New upstream release (15.12.0).
+  * New upstream release (15.12.1). (Closes: #814378)
+  * Update symbols files.
+  * Fix typos in Vcs-* fields. (Closes: #814201) Thanks to Zhang
+    Jingqiang
+  * Bump build dependencies to match packages versions, and not
+    libraries versions.
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 01 Feb 2016 10:23:55 +0100
+
+akonadi-search (15.08.3-1) experimental; urgency=medium
+
+  * New upstream release (15.08.3).
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 02 Dec 2015 12:39:37 +0100
+
+akonadi-search (15.08.2-1) experimental; urgency=medium
+
+  * New upstream release (15.08.2).
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 16 Oct 2015 08:07:13 +0200
+
+akonadi-search (15.08.1-1) experimental; urgency=medium
+
+  * New upstream release (15.08.1).
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 19 Sep 2015 03:16:31 +0200
+
+akonadi-search (15.08.0-1) experimental; urgency=medium
+
+  * Initial Debian release.
+  * New patch: disable_failing_tests
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 09 Sep 2015 21:14:21 +0200
+
+akonadi-search (4:15.08.0-0ubuntu1) wily; urgency=medium
+
+  * new upstream release
+
+ -- Ubuntu <ubuntu@ubuntu.com>  Wed, 26 Aug 2015 16:10:09 +0100
+
+akonadi-search (4:15.07.90-0ubuntu1) wily; urgency=medium
+
+  [ Harald Sitter ]
+  * Initial release
+
+  [ Jonathan Riddell ]
+  * new upstream beta release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 18 Aug 2015 08:54:18 +0100

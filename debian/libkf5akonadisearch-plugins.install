@@ -1,0 +1,4 @@
+usr/lib/*/qt5/plugins/akonadi/
+usr/lib/*/qt5/plugins/kcm_krunner_pimcontacts.so
+usr/lib/*/qt5/plugins/kf5/krunner/krunner_pimcontacts.so
+
